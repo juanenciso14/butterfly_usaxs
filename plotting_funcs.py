@@ -7,8 +7,6 @@ Created on Wed Oct 24 11:25:34 2018
 """
 # %% Append current directory to path so custom modules can be imported
 import sys
-sys.path.append('.')
-# %% Other imports
 
 # built in imports
 import re

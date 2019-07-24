@@ -8,8 +8,6 @@ Created on Sun Nov 11 19:13:55 2018
 
 # %% Append current directory to path so modules can be imported
 import sys
-sys.path.append('.')
-# %%
 
 # builtin module imports
 # third party imports
