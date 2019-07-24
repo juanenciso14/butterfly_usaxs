@@ -6,8 +6,6 @@ Created on Tue Dec 4 10:37:04 2018
 @author: juanenciso
 """
 
-# %% Append current directory to path so modules can be imported
-import sys
 import argparse
 from datetime import datetime
 import numpy as np
@@ -17,7 +15,6 @@ import peakutils
 from misc_funcs import simplify_header
 from misc_funcs import configure_azimuthal_integrator as cf_az_int
 
-# %% Functions
 # find_ridge_scattering(fabio.obj, np.array) -> (np.int64, np.int64)
 def find_ridge_scattering(par_fabio_obj, par_mask=None):
     """
@@ -140,6 +137,7 @@ def integrate_angles(par_l, par_u, par_fabio_obj, par_mask=None):
                                       mask=par_mask)
     return (scat, intens)
 
+
 def main():
     """
     Main execution block
@@ -212,8 +210,6 @@ L_Q = 0.003
 U_Q = 0.03
 NPOINTS = 1000
 ORDER_AMAX = 100
-# RIDGE_Q = 0.01048 # Maximum value of q for any ridge scattering peak
 
-# %% Main execution block
 if __name__ == "__main__":
     main()

@@ -5,16 +5,12 @@ Created on Wed Oct 24 10:08:39 2018
 
 @author: juanenciso
 """
-# %% Imports
+
 import os
 import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
 import pyFAI
-
-# %% Functions
-
-# Configure azimuthal integrator
 
 # Get filenames
 def get_filenames(par_pattern, par_path=None):
@@ -73,7 +69,7 @@ def configure_azimuthal_integrator(par_edf_hanldle):
                      pixelX=pixel1m*1e6, pixelY=pixel2m*1e6)
     return my_azin
 
-# Get edf details
+# Get edf header data
 def simplify_header(par_edf_handle):
     """
     Return a dictionary containing only centre coordinates, pixel sizes,
@@ -143,7 +139,7 @@ def pix_to_q(par_psize, par_npix, sd_dist, wavelength):
     # Centre coordinates provided in case they are needed
     Center_1: 958.376 px
     Center_2: 939 px
-    # TODO MAKE SURE THIS IS YIELDING CORRECT RESULTS
+    # TODO MAKE SURE THIS IS PRODUCING CORRECT RESULTS
     """
     pix_dist = par_psize * par_npix
     wl_nm = metres_nanometres(wavelength)
@@ -191,16 +187,3 @@ def d_to_pix(par_psize1, par_psize2, par_d, sd_dist, wavelength):
     """
     q_nm = 2*np.pi/par_d
     return q_to_pix(par_psize1, par_psize2, q_nm, sd_dist, wavelength)
-
-def read_foxtrot():
-    """
-    Wrap around pd.read_csv to parse Foxtrot Soleil output data
-    
-     TODO: Complete this function
-    """
-    pass
-
-# %% TEST
-#import fabio
-#simplify_header(fabio.open("/media/juanenciso/HD-LXU3/mel14N038_FRAMES_A0/"
-#                           "ls2451_frelon_26665_raw.edf"))

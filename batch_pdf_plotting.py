@@ -6,11 +6,7 @@ Created on Wed Nov 21 11:53:45 2018
 @author: juanenciso
 """
 
-# %% Append current directory to path so modules can be imported
 import sys
-
-# builtin module imports
-# local imports
 from multi_page_plotting import multiple_pages
 
 # %%

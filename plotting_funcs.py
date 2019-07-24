@@ -5,25 +5,17 @@ Created on Wed Oct 24 11:25:34 2018
 
 @author: juanenciso
 """
-# %% Append current directory to path so custom modules can be imported
-import sys
 
-# built in imports
 import re
-
-# third party imports
 import fabio
 import matplotlib.pyplot as plt
 import numpy as np
-
-# local imports
 import misc_funcs
-# %% Fns
 
 
 def plot_single_2d(par_edf_data):
     """
-    # TODO: Docstring this function
+    # TODO: Complete docstring
     """
     my_fig = plt.figure()
     my_ax = my_fig.gca()
@@ -37,9 +29,6 @@ def plot_single_2d(par_edf_data):
                  vmax=lspace[-12])
 
 
-# TODO: Modify so that I can pass a dictionary of keyword arguments in **kwargs
-# TODO: Modify so that I pass only a par_edf_list that should contain the full
-# path to access edf files
 def plot_multi_2d(par_edf_list, par_path, par_nrows, par_ncols,
                   par_dist, cmap="jet", show=False, title_override=True):
     """
@@ -121,16 +110,3 @@ def plot_multi_2d(par_edf_list, par_path, par_nrows, par_ncols,
         plt.show()
 
 # TODO: Add plotting 1D utilities
-
-# %% Test
-# TODO: DELETE LATER
-# Oct 18 multiplot some erato and melpomene
-# path_to_edf = ("/media/juanenciso/HD-LXU3/erato18009_FRAMES_A0/")
-# Make a list of files in path
-# edf_list = misc_funcs.get_filenames('.edf', path_to_edf)
-# Decide which number of rows to use if we are to use only 5 columns
-# nrows = (len(edf_list) // 5) + 1
-# Make a generator to call when plotting each image
-# edf_files = (fabio.open(path_to_edf + edf) for edf in edf_list)
-# %% Plot several 2D edfs
-# plot_multi_2d(edf_list, path_to_edf, 6, 300, cmap="jet")
