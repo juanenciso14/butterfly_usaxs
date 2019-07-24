@@ -14,7 +14,6 @@ import numpy as np
 import fabio
 from scipy.signal import argrelmax
 import peakutils
-sys.path.append('.')
 from misc_funcs import simplify_header
 from misc_funcs import configure_azimuthal_integrator as cf_az_int
 
