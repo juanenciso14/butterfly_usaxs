@@ -1,8 +1,10 @@
 * Butterfly USAXS
-This is a set of modules and functions I've written to analyse Ultra Small Angle X-ray Scattering [[https://en.wikipedia.org/wiki/Small-angle_X-ray_scattering][(USAXS]]) data collected on butterfly wings to study scale ultrastructure.
+This is a set of modules and functions I've written to analyse Ultra Small Angle X-ray Scattering [[https://en.wikipedia.org/wiki/Small-angle_X-ray_scattering][(USAXS]]) 
+data collected on butterfly wings to study scale ultrastructure.
 ** Requirements
-The scripts require the [[https://github.com/silx-kit/pyFAI][pyFAI]], [[https://peakutils.readthedocs.io/en/latest/index.html][peakutils]] and SciPy modules for azimuthal integration, and the [[http://www.silx.org/doc/fabio/dev/getting_started.html#introduction][fabio]] module for handling data of two dimensional X-ray detectors. Matplotlib is required for plotting utilities.
+The scripts require the [[https://github.com/silx-kit/pyFAI][pyFAI]], [[https://peakutils.readthedocs.io/en/latest/index.html][peakutils]] and SciPy modules for azimuthal integration, and the [[http://www.silx.org/doc/fabio/dev/getting_started.html#introduction][fabio]] module
+ for handling data of two dimensional X-ray detectors. Matplotlib is required for plotting utilities.
 ** Execution
-```bash
+``` bash
 ./integrate_ridge_scattering.py sample.edf empty.edf mask.txt
 ```
