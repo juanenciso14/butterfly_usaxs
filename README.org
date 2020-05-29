@@ -1,0 +1,2 @@
+* Butterfly USAXS
+This is a set of modules and functions I've written to analyse Ultra Small Angle X-ray Scattering [[https://en.wikipedia.org/wiki/Small-angle_X-ray_scattering][(USAXS]]) data collected on butterfly wings to study scale ultrastructure.
