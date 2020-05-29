@@ -112,7 +112,7 @@ def metres_micrometres(par_m):
     """
     Converts metres to micrometres
     """
-    return par_m * 1e9
+    return par_m * 1e6
 
 
 def pix_to_q(par_psize, par_npix, sd_dist, wavelength):
