@@ -5,12 +5,14 @@ data collected on butterfly wings to study scale ultrastructure.
 The scripts require the [[https://github.com/silx-kit/pyFAI][pyFAI]], [[https://peakutils.readthedocs.io/en/latest/index.html][peakutils]] and SciPy modules for azimuthal integration, and the [[http://www.silx.org/doc/fabio/dev/getting_started.html#introduction][fabio]] module
  for handling data of two dimensional X-ray detectors. Matplotlib is required for plotting utilities.
 ** Execution
-The main script requires three arguments. 
+The main script `integrate_ridge_scattering.py` requires three arguments: 
 - An edf file containing the 2D scattering pattern to analyse
 - An 'empty' edf file, used to correct for white noise
 - A text file containing information on the pixels that mask the position of the beam stop. 
   This information comes in the form of a rectangular matrix with dimensions equal to the dimensions
-  of the detector in $pixels_{x} \times pixels_{y}$ with masked pixels set to 0 and valid pixels set to 1.
+  of the detector in pixels_{x} \times pixels_{y} with masked pixels set to 0 and valid pixels set to 1.
+
+It is executed as follows:
 #+begin_src shell
   ./integrate_ridge_scattering.py sample.edf empty.edf mask.txt
 #+end_src
