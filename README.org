@@ -18,7 +18,7 @@ It is executed as follows:
 #+end_src
 
 ** What it does
-The main motivation for the script is to analyse batches (thousands) of edf frames taken from a large number of samples
+The main motivation for the script is the analysis of batches (thousands) of edf frames taken from a large number of samples
 at a radiation facility, allowing the rapid identification specific structures in butterfly scales; spacing between ridges
 and spacing between cross-ribs. The script first searches for ridges by scanning the image in 5\deg regions.
 Upon identification and recording of scattering due to parallel ridges (denoted by 1 in the figure), it moves
