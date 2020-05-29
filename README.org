@@ -23,7 +23,7 @@ at a radiation facility, allowing the rapid identification specific structures i
 and spacing between cross-ribs. The script first searches for ridges by scanning the image in 5\deg regions.
 Upon identification and recording of scattering due to parallel ridges (denoted by 1 in the figure), it moves
  the region of interest by ~90\deg to capture scattering due to cross-ribs (2 in the figure). It then  performs [[http://www.esrf.eu/UsersAndScience/Publications/Highlights/2012/et/et3/][azimuthal integration]] 
-over the region of interest to obtain a 1D representation of the data, and then it exports results for ridge spacing and cross-rib spacing in
+over the region of interest to obtain a 1D representation of the data, and exports results for ridge spacing and cross-rib spacing in
 separate plain text format files for posterior analyses.
 
 Not all the analysed edf frames contain valid data, this may result from instrument failure or focusing on parts of the sample other than a scale.
