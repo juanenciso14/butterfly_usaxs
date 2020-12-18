@@ -33,7 +33,7 @@ def find_ridge_scattering(par_fabio_obj, par_mask=None):
     --------
 
     (lower, upper), a tuple of np.in64 integers corresponding to the lower and
-    upper bounds for the azimuthal angle of ridge scattering.
+    upper bounds for the azimuthal angle of ridge scattering, in degrees.
 
     This function is expected to work if par_fabio_obj contains a well formed
     scattering pattern from a butterfly scale (orientated sample)
@@ -110,6 +110,7 @@ def valid_frame(par_q, par_i, par_thresh_intensity=1000.0):
     estimated_bragg = par_q[max_values[:2]]
     err_bragg = np.array([1e-04, 1e-03])
     # Verify condition 3
+
     if not np.all(np.abs(predicted_bragg - estimated_bragg) < err_bragg):
         print("3. No Bragg scattering!")
         return False
