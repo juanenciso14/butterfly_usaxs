@@ -18,9 +18,9 @@ from misc_funcs import configure_azimuthal_integrator as cf_az_int
 # find_ridge_scattering(fabio.obj, np.array) -> (np.int64, np.int64)
 def find_ridge_scattering(par_fabio_obj, par_mask=None):
     """
-    Finds lower and upper bounds for the scattering of the ridge, we
-    assume the largest q possible will be due to scattering of the dorsal scales
-    which are likely to have the smallest ridge spacing
+    Finds lower and upper bounds of the angular sections containing ridge scattering.
+    We assume the largest q possible will be due to scattering of the dorsal scales
+    which are likely to have the smallest ridge spacing.
 
     Parameters:
     -----------
