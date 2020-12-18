@@ -22,9 +22,6 @@ def find_ridge_scattering(par_fabio_obj, par_mask=None):
     assume the largest q possible will be due to scattering of the dorsal scales
     which are likely to have the smallest ridge spacing
 
-    As not all experiments will yield the same levels of intensity, it
-    should be changed accordingly using
-
     Parameters:
     -----------
 
@@ -80,6 +77,13 @@ def valid_frame(par_q, par_i, par_thresh_intensity=1000.0):
     --------
 
     True if all conditions for a 'good' frame are satisfied, False otherwise
+
+    Note:
+    -----
+
+    As not all experiments will yield the same levels of intensity,
+    par_thresh_intensity should be changed accordingly when calling
+    this function
     """
     # ======================================================
     # 1. Highest intensity needs to be at least 1000.0
