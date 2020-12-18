@@ -82,7 +82,7 @@ def valid_frame(par_q, par_i, par_thresh_intensity=1000.0):
     True if all conditions for a 'good' frame are satisfied, False otherwise
     """
     # ======================================================
-    # 1. Highest intensity needs to be at least 3000.0
+    # 1. Highest intensity needs to be at least 1000.0
     # 2. There should be at least two q peaks identified by
     #    argrelmax(intensity, order=ORDER_AMAX)
     # 3. The error between predicted and estimated Bragg peaks
