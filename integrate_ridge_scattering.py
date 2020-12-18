@@ -19,7 +19,7 @@ from misc_funcs import configure_azimuthal_integrator as cf_az_int
 def find_ridge_scattering(par_fabio_obj, par_mask=None):
     """
     Finds lower and upper bounds for the scattering of the ridge, we
-    assume the largest q possible will be due to scattering of the cover scales
+    assume the largest q possible will be due to scattering of the dorsal scales
     which are likely to have the smallest ridge spacing
 
     As not all experiments will yield the same levels of intensity, it
